@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="#">
     <script src="https://kit.fontawesome.com/619f162d00.js" crossorigin="anonymous"></script>
 </head>
@@ -16,6 +16,8 @@
     <header>
 
         <nav>
+
+            <a href="https://kystnaer.com/"><img src="#" alt="logo" class="logo"></a>
 
             <ul>
                 <li><a href="https://kystnaer.com/collections/all">Shop</a></li>
@@ -35,29 +37,16 @@
             <i class="fa-solid fa-bars" aria-hidden="true"></i>
         </button>
 
-        <a href="#"><img src="#" alt="logo" class="logo"></a>
+        <a href="#" aria-label="Kurv">
+            <i class="fa-solid fa-bag-shopping"></i>
 
-        <cart-link> <!--kopieret ind fra Kystnærs egen hjemmeside-->
-
-            <a href="/cart" class="header-trigger__link header-trigger__link--cart js-cart-icon js-cart-trigger" aria-haspopup="dialog" aria-label="Kurv">
-                <svg class="icon-svg icon icon-cart" aria-hidden="true" focusable="false" role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
-	                <path d="M41 17H7C5.89543 17 5 17.8954 5 19V45C5 46.1046 5.89543 47 7 47H41C42.1046 47 43 46.1046 43 45V19C43 17.8954 42.1046 17 41 17Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-	                <path d="M15 13V10C15 7.61305 15.9482 5.32387 17.636 3.63604C19.3239 1.94821 21.6131 1 24 1C26.3869 1 28.6761 1.94821 30.364 3.63604C32.0518 5.32387 33 7.61305 33 10V13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-
-                <div class="cart-count-bubble">
-                    <items-count aria-hidden="true">0</items-count>
-                </div>
-            </a>
-
-        </cart-link> <!--kopiering slut-->
+            <div class="cart-count-bubble">
+                <items-count aria-hidden="true">0</items-count>
+            </div>
+        </a>
 
         <label for="search" class="visually-hidden">Søg</label>
         <input type="search" id="search" placeholder="Søg i vores butik...">
-            <button id="search-btn">
-                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-            </button>
-        </input>
 
         <button id="search-btn">
             <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>

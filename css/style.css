@@ -2,3 +2,66 @@
     box-sizing: border-box;
     margin: 0;
 }
+
+header{
+    background-color: #fff;
+    width: 100%;
+    min-height: fit-content;
+    padding: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav li a{
+    text-decoration: none;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    padding: 0.3em 1em;
+}
+
+nav li a:hover{
+    color: #30302f;
+    border-bottom: 2px solid #000;
+}
+
+.logo{
+    min-width: 50px;
+    max-width: 70px;
+    margin: 0.5em;
+}
+
+main{
+    background-color: #5e534c;
+    width: 100%;
+}
+
+.banner{
+    background-image: url();
+    background-position: top center;
+    background-size: contain;
+    width: 100%;
+    min-height: 15vh;
+}
+
+h1{
+   font-size: 36px;
+   color: #fff;
+   padding: 0.3em 5%;
+}
