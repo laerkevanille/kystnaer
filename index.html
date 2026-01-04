@@ -10,14 +10,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="#">
     <script src="https://kit.fontawesome.com/619f162d00.js" crossorigin="anonymous"></script>
+    <script src="js/navigation.js" defer=""></script>
 </head>
 <body>
 
     <header>
 
-        <nav>
+        <button id="bars">
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
 
-            <a href="https://kystnaer.com/"><img src="#" alt="logo" class="logo"></a>
+        <a href="https://kystnaer.com/"><img src="img/tekst-logo1.png" alt="logo" class="logo"></a>
+
+        <nav>
 
             <ul>
                 <li><a href="https://kystnaer.com/collections/all">Shop</a></li>
@@ -29,28 +34,29 @@
                 <li><a href="https://kystnaer.com/pages/contact">Kontakt</a></li>
             </ul>
 
-            <div class="some"></div>
+            <div class="some">
+                <ul>
+                    <li><a href="https://www.facebook.com/kystnaer"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/kystnaer"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://dk.pinterest.com/kystnaer/"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                    <li><a href="https://www.tiktok.com/@kystnaer"><i class="fa-brands fa-tiktok"></i></a></li>
+                </ul>
+            </div>
 
         </nav>
 
-        <button id="bars">
-            <i class="fa-solid fa-bars" aria-hidden="true"></i>
-        </button>
+        <div>
+            <button id="kurv">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </button>
 
-        <a href="#" aria-label="Kurv">
-            <i class="fa-solid fa-bag-shopping"></i>
+            <label for="search" class="visually-hidden">Søg</label>
+            <input type="search" id="search" placeholder="Søg i vores butik...">
 
-            <div class="cart-count-bubble">
-                <items-count aria-hidden="true">0</items-count>
-            </div>
-        </a>
-
-        <label for="search" class="visually-hidden">Søg</label>
-        <input type="search" id="search" placeholder="Søg i vores butik...">
-
-        <button id="search-btn">
-            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-        </button>
+            <button id="search-btn">
+                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+            </button>
+        </div>
 
     </header>
 
@@ -64,109 +70,123 @@
 
         <section class="kategorier">
 
-            <section class="slider">
+            <section class="pakker">
 
                 <h3>Tilbudspakker til mænd</h3>
-                <div class="pakker">
+                <div class="slider">
 
                     <div class="produkt">
-                        <a href="#"><img src="#" alt="#" class="sliderbillede"></a>
+                        <a href="#"><img src="img/barberingssaet.png" alt="#" class="sliderbillede"></a>
                         <a href="#" class="produktnavn"><p>Barberingspakken</p></a>
                         <p class="pris">299,-</p>
                     </div>
                     
                     <div class="produkt">
-                        <a href="#"><img src="#" alt="#" class="sliderbillede"></a>
+                        <a href="#"><img src="img/i-bad-pakken.jpg" alt="#" class="sliderbillede"></a>
                         <a href="#" class="produktnavn"><p>"Gå glad i bad"-pakken</p></a>
                         <p class="pris">199,-</p>
                     </div>
                     
                     <div class="produkt">
-                        <a href="#"><img src="#" alt="#" class="sliderbillede"></a>
+                        <a href="#"><img src="img/duftproevepakke.png" alt="#" class="sliderbillede"></a>
                         <a href="#" class="produktnavn"><p>Duftprøvepakken</p></a>
                         <p class="pris">79,-</p>
                     </div>
+
+                    <div class="produkt">
+                        <a href="#"><img src="img/skippers-favoritter.png" alt="#" class="sliderbillede"></a>
+                        <a href="#" class="produktnavn"><p>Skippers favoritter</p></a>
+                        <p class="pris">279,-</p>
+                    </div>
+
+                    <a href="#" class="se-alle">Se alle</a>
     
                 </div>
 
             </section>
 
-            <section class="slider">
+            <section class="barbering">
 
                 <h3>Barbering</h3>
-                <div class="barbering">
+                <div class="slider">
 
                     <div class="produkt">
-                        <a href="#"><img src="#" alt="#" class="sliderbillede"></a>
+                        <a href="#"><img src="img/barberingskost.png" alt="#" class="sliderbillede"></a>
                         <a href="#" class="produktnavn"><p>Barberingskost</p></a>
                         <p class="pris">99,-</p>
                     </div>
                     
                     <div class="produkt">
-                        <a href="#"><img src="#" alt="#" class="sliderbillede"></a>
+                        <a href="#"><img src="img/barbering03.png" alt="#" class="sliderbillede"></a>
                         <a href="#" class="produktnavn"><p>Shavingbar</p></a>
                         <p class="pris">160,-</p>
                     </div>
                     
                     <div class="produkt">
-                        <a href="#"><img src="#" alt="#" class="sliderbillede"></a>
+                        <a href="#"><img src="img/barbering04.jpg" alt="#" class="sliderbillede"></a>
                         <a href="#" class="produktnavn"><p>Bambusskraber</p></a>
                         <p class="pris">59,-</p>
                     </div>
+
+                    <a href="#" class="se-alle">Se alle</a>
                     
                 </div>
 
             </section>
 
-            <section class="slider">
+            <section class="saeber">
 
                 <h3>Hånd- og kropssæber</h3>
-                <div class="saeber">
+                <section class="slider">
 
                     <div class="produkt">
-                        <a href="#"><img src="#" alt="#" class="sliderbillede"></a>
+                        <a href="#"><img src="img/saebebar-tang.jpg" alt="#" class="sliderbillede"></a>
                         <a href="#" class="produktnavn"><p>Sæbebar - tang</p></a>
                         <p class="pris">75,-</p>
                     </div>
                     
                     <div class="produkt">
-                        <a href="#"><img src="#" alt="#" class="sliderbillede"></a>
+                        <a href="#"><img src="img/saebebar-neutral.jpg" alt="#" class="sliderbillede"></a>
                         <a href="#" class="produktnavn"><p>Sæbebar - neutral</p></a>
                         <p class="pris">75,-</p>
                     </div>
                     
                     <div class="produkt">
-                        <a href="#"><img src="#" alt="#" class="sliderbillede"></a>
+                        <a href="#"><img src="img/shampoobar-aktivt-kul.jpg" alt="#" class="sliderbillede"></a>
                         <a href="#" class="produktnavn"><p>Sæbebar - aktivt kul</p></a>
                         <p class="pris">75,-</p>
                     </div>
+
+                    <a href="#" class="se-alle">Se alle</a>
 
                 </div>
 
             </section>
 
-            <section class="slider">
+            <section class="shampoo">
 
                 <h3>Shampoo</h3>
-                <div class="shampoo">
+                <section class="slider">
 
                     <div class="produkt">
-                        <a href="#"><img src="#" alt="#" class="sliderbillede"></a>
+                        <a href="#"><img src="img/shampoobar-tang.jpg" alt="#" class="sliderbillede"></a>
                         <a href="#" class="produktnavn"><p>Shampoobar - tang</p></a>
                         <p class="pris">140,-</p>
                     </div>
                     
                     <div class="produkt">
-                        <a href="#"><img src="#" alt="#" class="sliderbillede"></a>
+                        <a href="#"><img src="img/shampoobar-neutral.jpg" alt="#" class="sliderbillede"></a>
                         <a href="#" class="produktnavn"><p>Shampoobar - neutral</p></a>
                         <p class="pris">140,-</p>
                     </div>
                     
                     <div class="produkt">
-                        <a href="#"><img src="#" alt="#" class="sliderbillede"></a>
+                        <a href="#"><img src="img/shampoobar-aktivt-kul.jpg" alt="#" class="sliderbillede"></a>
                         <a href="#" class="produktnavn"><p>Shampoobar - aktivt kul</p></a>
                         <p class="pris">140,-</p>
                     </div>
+
+                    <a href="#" class="se-alle">Se alle</a>
 
                 </div>
 
@@ -179,73 +199,79 @@
             <h2>Alle produkter til mænd</h2>
 
             <div class="gridprodukt">
-                <a href="#"><img src="#" alt="#" class="gridbillede"></a>
+                <a href="#"><img src="img/barberingssaet.png" alt="#" class="gridbillede"></a>
                 <a href="#" class="produktnavn-grid"><p>Barberingspakken</p></a>
                 <p class="pris-grid">299,-</p>
             </div>
 
             <div class="gridprodukt">
-                <a href="#"><img src="#" alt="#" class="gridbillede"></a>
+                <a href="#"><img src="img/i-bad-pakken.jpg" alt="#" class="gridbillede"></a>
                 <a href="#" class="produktnavn-grid"><p>"Gå glad i bad"-pakken</p></a>
                 <p class="pris-grid">199,-</p>
             </div>
 
             <div class="gridprodukt">
-                <a href="#"><img src="#" alt="#" class="gridbillede"></a>
+                <a href="#"><img src="img/duftproevepakke.png" alt="#" class="gridbillede"></a>
                 <a href="#" class="produktnavn-grid"><p>Duftprøvepakken</p></a>
                 <p class="pris-grid">79,-</p>
             </div>
 
             <div class="gridprodukt">
-                <a href="#"><img src="#" alt="#" class="gridbillede"></a>
+                <a href="#"><img src="img/skippers-favoritter.png" alt="#" class="gridbillede"></a>
+                <a href="#" class="produktnavn-grid"><p>Skippers favoritter</p></a>
+                <p class="pris-grid">279,-</p>
+            </div>
+
+            <div class="gridprodukt">
+                <a href="#"><img src="img/barberingskost.png" alt="#" class="gridbillede"></a>
                 <a href="#" class="produktnavn-grid"><p>Barberingskost</p></a>
                 <p class="pris-grid">99,-</p>
             </div>
 
             <div class="gridprodukt">
-                <a href="#"><img src="#" alt="#" class="gridbillede"></a>
+                <a href="#"><img src="img/barbering03.png" alt="#" class="gridbillede"></a>
                 <a href="#" class="produktnavn-grid"><p>Shavingbar</p></a>
                 <p class="pris-grid">160,-</p>
             </div>
 
             <div class="gridprodukt">
-                <a href="#"><img src="#" alt="#" class="gridbillede"></a>
+                <a href="#"><img src="img/barbering04.jpg" alt="#" class="gridbillede"></a>
                 <a href="#" class="produktnavn-grid"><p>Bambusskraber</p></a>
                 <p class="pris-grid">59,-</p>
             </div>
 
             <div class="gridprodukt">
-                <a href="#"><img src="#" alt="#" class="gridbillede"></a>
+                <a href="#"><img src="img/saebebar-tang.jpg" alt="#" class="gridbillede"></a>
                 <a href="#" class="produktnavn-grid"><p>Sæbebar - tang</p></a>
                 <p class="pris-grid">75,-</p>
             </div>
 
             <div class="gridprodukt">
-                <a href="#"><img src="#" alt="#" class="gridbillede"></a>
+                <a href="#"><img src="img/saebebar-neutral.jpg" alt="#" class="gridbillede"></a>
                 <a href="#" class="produktnavn-grid"><p>Sæbebar - neutral</p></a>
                 <p class="pris-grid">75,-</p>
             </div>
             
             <div class="gridprodukt">
-                <a href="#"><img src="#" alt="#" class="gridbillede"></a>
+                <a href="#"><img src="img/shampoobar-aktivt-kul.jpg" alt="#" class="gridbillede"></a>
                 <a href="#" class="produktnavn-grid"><p>Sæbebar - aktivt kul</p></a>
                 <p class="pris-grid">75,-</p>
             </div>
 
             <div class="gridprodukt">
-                <a href="#"><img src="#" alt="#" class="gridbillede"></a>
+                <a href="#"><img src="img/shampoobar-tang.jpg" alt="#" class="gridbillede"></a>
                 <a href="#" class="produktnavn-grid"><p>Shampoobar - tang</p></a>
                 <p class="pris-grid">140,-</p>
             </div>
 
             <div class="gridprodukt">
-                <a href="#"><img src="#" alt="#" class="gridbillede"></a>
+                <a href="#"><img src="img/shampoobar-neutral.jpg" alt="#" class="gridbillede"></a>
                 <a href="#" class="produktnavn-grid"><p>Shampoobar - neutral</p></a>
                 <p class="pris-grid">140,-</p>
             </div>
 
             <div class="gridprodukt">
-                <a href="#"><img src="#" alt="#" class="gridbillede"></a>
+                <a href="#"><img src="img/shampoobar-aktivt-kul.jpg" alt="#" class="gridbillede"></a>
                 <a href="#" class="produktnavn-grid"><p>Shampoobar - aktivt kul</p></a>
                 <p class="pris-grid">140,-</p>
             </div>

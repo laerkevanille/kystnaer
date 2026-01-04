@@ -3,20 +3,19 @@
     margin: 0;
 }
 
+
+/*Header*/
+
 header{
     background-color: #fff;
     width: 100%;
-    min-height: fit-content;
-    padding: 1.5em;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 nav{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
+    display: none;
 }
 
 nav ul{
@@ -42,26 +41,106 @@ nav li a:hover{
 }
 
 .logo{
-    min-width: 50px;
-    max-width: 70px;
-    margin: 0.5em;
+    width: 40%;
 }
+
+.visually-hidden{
+    display: none;
+}
+
+#search{
+    display: none;
+}
+
+#bars, #search-btn, #kurv{
+    border: none;
+    background-color: transparent;
+}
+
+#bars i, #search-btn i, #kurv i{
+    font-size: 16px;
+}
+
+
+
+/*Hovedindhold*/
 
 main{
     background-color: #5e534c;
-    width: 100%;
+    color: #fff;
 }
 
 .banner{
-    background-image: url();
-    background-position: top center;
-    background-size: contain;
+    background-image: url(../img/barbering01.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
-    min-height: 15vh;
+    min-height: 12vh;
 }
 
 h1{
-   font-size: 36px;
-   color: #fff;
-   padding: 0.3em 5%;
+   font-size: 5vw;
+   font-family: 'Lora', sans-serif;
+   font-weight: 400;
+   text-align: center;
+   padding: 0.3em;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 3vw;
+    font-weight: 300;
+}
+
+.kategorier{
+    margin: 0.8em;
+}
+
+.slider{
+    display: inline-flex;
+    overflow-x: scroll;
+}
+
+.produkt{
+    width: 35%;
+}
+
+.sliderbillede{
+    max-width: 100%;
+    aspect-ratio: 1/1;
+    object-position: center;
+    object-fit: cover;
+}
+
+.all-grid{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0.8em;
+}
+
+.all-grid h2{
+    width: 100%;
+}
+
+.gridprodukt{
+    padding: 0.5em 0.8em 0.5em 0;
+    max-width: 47%;
+}
+
+.gridbillede{
+    max-width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+/*Footer*/
+
+footer{
+    width: 100%;
 }
