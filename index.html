@@ -56,6 +56,7 @@
             <button id="search-btn">
                 <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
             </button>
+
         </div>
 
     </header>
@@ -290,12 +291,16 @@
 
     <section class="nyhedsbrev">
 
-        <h2>Tilmeld dig vores nyhedsbrev og få 10% rabat på dit første køb</h2>
-        <p>Vær den første til at modtage tilbud, nyheder og tips til hud- og hårpleje</p>
+        <div class="nyhedsbrev-tekst">
+            <h2>Tilmeld dig vores nyhedsbrev og få 10% rabat på dit første køb</h2>
+            <p>Vær den første til at modtage tilbud, nyheder og tips til hud- og hårpleje</p>
+        </div>
 
-        <label for="nyhedsbrev-email" class="visually-hidden">Din email</label>
-        <input type="email" id="nyhedsbrev-email" autocomplete="email" placeholder="Din email">
-        <input type="submit" class="nyhedsbrev-submit" value="Tilmeld">
+        <div class="nyhedsbrev-input">
+            <label for="nyhedsbrev-email" class="visually-hidden">Din email</label>
+            <input type="email" id="nyhedsbrev-email" autocomplete="email" placeholder="Din email">
+            <input type="submit" class="nyhedsbrev-submit" value="Tilmeld">
+        </div>
 
     </section>
 
@@ -308,7 +313,7 @@
                 <li><address aria-label="email"><a href="mailto:kontakt@kystnaer.com">kontakt@kystnaer.com</a></address></li>
                 <li><address aria-label="adresse">Ørbyhage 96</address></li>
                 <li><address>6100 Haderslev</address></li>
-                <li>Tlf.: <address aria-label="telefon">+45 71 72 31 91</address></li>
+                <li"><address aria-label="telefon">Tlf.: +45 71 72 31 91</address></li>
             </ul>
         </section>
 
