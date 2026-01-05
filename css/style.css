@@ -9,9 +9,11 @@
 header{
     background-color: #fff;
     width: 100%;
+    height: fit-content;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0.8em 0.5em;
 }
 
 nav{
@@ -41,7 +43,9 @@ nav li a:hover{
 }
 
 .logo{
-    width: 40%;
+    height: 4vh;
+    display: flex;
+    justify-self: center;
 }
 
 .visually-hidden{
@@ -58,7 +62,8 @@ nav li a:hover{
 }
 
 #bars i, #search-btn i, #kurv i{
-    font-size: 16px;
+    font-size: 20px;
+    color: #30302f;
 }
 
 
@@ -67,43 +72,75 @@ nav li a:hover{
 
 main{
     background-color: #5e534c;
-    color: #fff;
 }
 
 .banner{
     background-image: url(../img/barbering01.png);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    min-height: 12vh;
+    min-height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1{
-   font-size: 5vw;
-   font-family: 'Lora', sans-serif;
+   color: #fff;
+   font-size: 28px;
+   font-family: 'Lora', serif;
    font-weight: 400;
    text-align: center;
    padding: 0.3em;
+   text-shadow: 2px 2px #30302f;
 }
 
 h2{
+    color: beige;
     text-align: center;
-    font-family: 'Source Sans 3', sans-serif;
-    font-size: 3vw;
+    font-family: 'Source Sans 3', 'Roboto', sans-serif;
+    font-size: 18px;
     font-weight: 300;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+}
+
+h3{
+    color: beige;
+    font-size: 16px;
+    font-family: 'Lora', serif;
+    font-weight: 200;
+}
+
+main a, main p{
+    color: beige;
+    font-family: 'Lora', serif;
+    font-size: 12px;
+    font-weight: 200;
+    text-decoration: none;
 }
 
 .kategorier{
-    margin: 0.8em;
+    margin: 1em;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid beige;
+}
+
+.pakker, .barbering, .saeber, .shampoo{
+    margin: 1.3em 0;
 }
 
 .slider{
-    display: inline-flex;
+    display: flex;
     overflow-x: scroll;
+    width: 100%;
+    gap: 0.8em;
+    margin-top: 0.5em;
 }
 
 .produkt{
-    width: 35%;
+   min-width: 40%;
 }
 
 .sliderbillede{
@@ -113,22 +150,38 @@ h2{
     object-fit: cover;
 }
 
-.all-grid{
+.se-alle{
+    background-color: #657786;
+    border-radius: 50%;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
+    align-items: center;
+    min-width: max-content;
+    max-height: fit-content;
+    margin: 7% 0.8em 0 0.8em;
+    box-shadow: 3px 3px 0.5em #30302f79;
+}
+
+.se-alle a{
+    text-align: center;
+    font-size: 16px;
+    margin: 36px 22px;
+}
+
+.all-grid{
+    display: grid;
+    grid: repeat(7, 1fr)/1fr 1fr;
+    gap: 0.8em;
     margin: 0.8em;
 }
 
-.all-grid h2{
+/*.all-grid h2{
     width: 100%;
 }
 
 .gridprodukt{
     padding: 0.5em 0.8em 0.5em 0;
     max-width: 47%;
-}
+}*/
 
 .gridbillede{
     max-width: 100%;
