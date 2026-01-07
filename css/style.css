@@ -348,6 +348,7 @@ footer{
 footer section{
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
 }
 
 
@@ -355,17 +356,19 @@ footer h3{
     color: #000;
     font-size: 18px;
     font-weight: 300;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
 }
 
 
 footer ul{
-    list-style: none;
+    list-style-type: none;
+    padding: 0;
 }
 
 
 footer li{
     font-family: 'Source Sans 3', sans-serif;
+    margin-bottom: 3px;
 }
 
 
@@ -399,8 +402,22 @@ footer li a{
     width: 1px;
 }
 
+.til-toppen{
+    position: fixed;
+    bottom: 7%;
+    right: 7%;
+    z-index: 10;
+}
 
-
+.til-toppen a{
+    color: #fff;
+    background-color: #000;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 8px;
+    border-radius: 180px;
+}
 
 
 
