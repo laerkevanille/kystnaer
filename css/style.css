@@ -3,12 +3,16 @@
     margin: 0;
 }
 
+
 body{
     background-color: #5e534c;
 }
 
 
+
+
 /*Header*/
+
 
 header{
     background-color: #fff;
@@ -20,18 +24,22 @@ header{
     padding: 0.8em 0.5em;
 }
 
+
 nav{
     display: none;
 }
+
 
 nav ul{
     list-style: none;
 }
 
+
 nav li{
     display: flex;
     flex-direction: column;
 }
+
 
 nav li a{
     text-decoration: none;
@@ -42,10 +50,12 @@ nav li a{
     padding: 1em 0;
 }
 
+
 nav .some li{
    display: inline-block;
    margin-top: 0.8em;
 }
+
 
 .logo{
     height: 4vh;
@@ -53,19 +63,23 @@ nav .some li{
     justify-self: center;
 }
 
+
 input[type=search]{
     display: none;
 }
+
 
 #bars, #search-btn, #kurv{
     border: none;
     background-color: transparent;
 }
 
+
 #bars i, #search-btn i, #kurv i{
     font-size: 20px;
     color: #30302f;
 }
+
 
 #search.show-search{
     display: block;
@@ -79,11 +93,38 @@ input[type=search]{
 
 
 
+
+
+
 /*Hovedindhold*/
+
+
+.content{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+
+
 
 main{
     background-color: #5e534c;
 }
+
+
+p{
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+
+.produkt p,
+.gridprodukt p{
+    text-align: center;
+    max-width: 100%;
+}
+
 
 .banner{
     background-image: url(../img/barbering01.png);
@@ -97,6 +138,7 @@ main{
     align-items: center;
 }
 
+
 h1{
    color: #fff;
    font-size: 28px;
@@ -106,6 +148,7 @@ h1{
    padding: 0.3em;
    text-shadow: 2px 2px #30302f;
 }
+
 
 h2{
     color: beige;
@@ -117,12 +160,14 @@ h2{
     margin-bottom: 2em;
 }
 
+
 h3{
     color: beige;
     font-size: 16px;
     font-family: 'Lora', serif;
     font-weight: 200;
 }
+
 
 main a, main p{
     color: beige;
@@ -132,35 +177,48 @@ main a, main p{
     text-decoration: none;
 }
 
+
 .kategorier{
-    margin: 1em;
-    margin-right: 0;
+    margin: 1em 0;
     padding-bottom: 1.5em;
     border-bottom: 1px solid beige;
 }
+
 
 .pakker, .barbering, .saeber, .shampoo{
     margin: 1.3em 0;
 }
 
+
 .slider{
     display: flex;
-    overflow-x: scroll;
+    overflow-x: auto;
+    scrollbar-width: none;
     width: 100%;
     gap: 0.8em;
     margin-top: 0.5em;
 }
 
-.produkt{
-   min-width: 40%;
+
+.slider::-webkit-scrollbar{
+    display: none;                /* fjerner scrollbar */
 }
+
+
+.produkt{
+   flex: 0 0 auto;
+   width: 160px;
+}
+
 
 .sliderbillede{
     max-width: 100%;
     aspect-ratio: 1/1;
     object-position: center;
     object-fit: cover;
+    display: block;
 }
+
 
 .se-alle{
     background-color: #657786;
@@ -174,6 +232,7 @@ main a, main p{
     box-shadow: 3px 3px 0.5em #30302f79;
 }
 
+
 .se-alle a{
     text-align: center;
     font-size: 16px;
@@ -181,24 +240,32 @@ main a, main p{
     margin: 36px 22px;
 }
 
+
 .all-grid{
     display: grid;
-    grid: repeat(7, 1fr)/1fr 1fr;
     gap: 0.8em;
     padding-bottom: 1.5em;
     margin: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    margin: 2rem auto;
 }
+
 
 .gridbillede{
     max-width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
     object-position: center;
+    display: block;
 }
 
 
 
+
+
+
 /*Nyhedsbrev*/
+
 
 .nyhedsbrev{
     display: flex;
@@ -211,12 +278,14 @@ main a, main p{
     margin: 1em 0;
 }
 
+
 .nyhedsbrev h2{
     font-size: 22px;
     font-family: 'Lora', serif;
     font-weight: 300;
     margin-bottom: 1.3em;
 }
+
 
 .nyhedsbrev p{
     color: beige;
@@ -226,32 +295,46 @@ main a, main p{
     text-align: center;
 }
 
+
 .nyhedsbrev-input{
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-top: 1.5em;
     margin-bottom: 1em;
 }
 
+
 input[type=email]{
     border: 1px solid #30302f;
     border-radius: 180px;
-    padding: 14px 160px 14px 20px;
     margin-bottom: 1em;
 }
+
 
 input[type=submit]{
     background-color: beige;
     color: #30302f;
     border: none;
     border-radius: 180px;
-    padding: 14px 90px 14px 90px;
     margin-bottom: 1em;
 }
 
 
+input[type=email],
+input[type=submit]{
+    width: 100%;
+    max-width: 320px;
+    padding: 14px 20px;
+}
+
+
+
+
+
 
 /*Footer*/
+
 
 footer{
     display: flex;
@@ -261,10 +344,12 @@ footer{
     padding: 1.3em 1em;
 }
 
+
 footer section{
     display: flex;
     flex-direction: column;
 }
+
 
 footer h3{
     color: #000;
@@ -273,13 +358,16 @@ footer h3{
     margin-bottom: 10px;
 }
 
+
 footer ul{
     list-style: none;
 }
 
+
 footer li{
     font-family: 'Source Sans 3', sans-serif;
 }
+
 
 footer li a{
     font-size: 16px;
@@ -287,28 +375,37 @@ footer li a{
     color: #000;
 }
 
+
 .footer-some li{
     display: inline-block;
 }
 
 
 
+
+
+
 /*Andet*/
 
+
 .visually-hidden{
-	border: 0;
-	clip: rect(0 0 0 0);
-	height: 1px;
-	margin: -1px;
-	overflow: hidden;
-	padding: 0;
-	position: absolute;
-	width: 1px;
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
 }
 
 
 
+
+
+
 /*Mobil*/
+
 
 @media screen and (max-width: 768px){
     .show{
@@ -325,16 +422,21 @@ footer li a{
 
 
 
+
+
+
 /*Desktop*/
+
 
 @media screen and (min-width: 769px) {
     header{
         border-bottom: 1px solid #657786;
     }
-    
+   
     #bars{
         display: none;
     }
+
 
     nav{
         display: flex;
@@ -342,37 +444,46 @@ footer li a{
         align-items: center;
     }
 
+
     nav li{
         display: inline-block;
         padding: 0.3em 1.3em;
     }
 
+
     nav li a{
         font-size: 16px;
     }
+
 
     .some{
         display: none;
     }
 
+
     .banner{
         min-height: 300px;
     }
+
 
     .kategorier{
         margin: 1.5em 2em;
         margin-right: 0;
     }
 
+
     .produkt{
         max-height: 5%;
     }
+
 
     .nyhedsbrev{
         flex-direction: row;
         justify-content: space-around;
         align-items: flex-start;
     }
+
+
 
 
     footer{
