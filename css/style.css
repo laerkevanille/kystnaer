@@ -398,6 +398,7 @@ footer li a{
     font-size: 16px;
     font-weight: 400;
     color: #000;
+    text-decoration: none;
 }
 
 .footer-kontakt li:nth-of-type(1){
@@ -412,7 +413,6 @@ footer li a{
 .footer-some li a{
     color: #30302f;
 }
-
 
 
 
@@ -476,8 +476,6 @@ footer li a{
 
 
 
-
-
 /*Desktop*/
 
 
@@ -511,7 +509,7 @@ footer li a{
     nav li a:hover{
         color: #657786;
         text-decoration: underline;
-        transition: 0.2s ease-in;
+        transition: 0.1s ease-in-out;
     }
 
 
@@ -537,15 +535,17 @@ footer li a{
 
     .produkt{
         max-height: 5%;
+        width: 200px;
     }
 
     .produkt a:hover, .gridprodukt a:hover{
         text-decoration: underline;
+        transition: 0.1s ease-in-out;
     }
 
     .se-alle:hover{
         background-color: #8A9AA4;
-        box-shadow: 3px 3px 0.7em #30302f8e;
+        box-shadow: 3px 3px 0.9em #30302fa4;
         transition: 0.3s ease-in-out;
     }
 
@@ -553,7 +553,25 @@ footer li a{
         color: #30302f;
         background-color: #fff;
         transition: 0.2s ease-in-out;
-        cursor: pointer;
+    }
+
+    .produkt button{
+        bottom: 38px;
+        left: 80%;
+    }
+
+    .all-grid{
+        margin: 1.5em 2em;
+        grid-template-columns: repeat(4, minmax(140px, 1fr));
+    }
+
+    .gridprodukt button{
+        bottom: 40px;
+        left: 84%;
+    }
+
+    .produkt p, .gridprodukt p{
+        font-size: 14px;
     }
 
 
@@ -562,7 +580,7 @@ footer li a{
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        padding: 2.5em 1em;
+        padding: 2.5em 2em 3.2em 2em;
     }
 
     .nyhedsbrev h2{
@@ -611,13 +629,16 @@ footer li a{
 
     .footer-kontakt a:hover, .footer-om a:hover, .footer-info a:hover{
         color: #657786;
+        text-decoration: underline;
+        transition: 0.1s ease-in-out;
     }
 
-    .fa-facebook-f:hover, .fa-facebook-f a:hover{
+    footer .fa-facebook-f:hover, footer .fa-facebook-f a:hover{
         color: #1877F2;
+        transition: 0.1s ease-in-out;
     }
 
-    .fa-instagram:hover, .fa-instagram a:hover{
+    footer .fa-instagram:hover, footer .fa-instagram a:hover{
         background: #833ab4;
         background: linear-gradient(to bottom right,
        #833ab4,#fd1d1d,#fcb045);
@@ -627,13 +648,21 @@ footer li a{
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         color: transparent;
+        transition: 0.1s ease-in-out;
     }
 
-    .fa-pinterest-p:hover, .fa-instagram a:hover{
+    footer .fa-pinterest-p:hover, footer .fa-instagram-p a:hover{
         color: #E60023;
+        transition: 0.1s ease-in-out;
     }
 
-    .fa-tiktok:hover{
+    footer .fa-tiktok:hover, footer .fa-tiktok a:hover{
         color: #000;
+        transition: 0.1s ease-in-out;
+    }
+
+
+    button:hover{
+        cursor: pointer;
     }
 }
